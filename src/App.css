@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+/* styles.css */
+
+body.dark-mode {
+  background-color: #040404;
+  color: #E2D1F9;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+.background-container {
+   /* background-image: url('./components/images/globe.gif'); /* Replace with the path to your image */
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Set the height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    background-color: rgb(0, 0, 0);
   }
-}
+  
+/*.low-light-overlay { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Adjust the alpha value for low light density 
+  }*/
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .round-button.slide-in{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border: 2px solid rgb(0, 0, 0);
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.9s ease-in-out;
+    transform: translateX(0);
   }
-  to {
-    transform: rotate(360deg);
+
+  .name {
+    font-size: 50px;
+    font-family: lucida handwriting;
+    font-weight: bold;
+    color: #E2D1F9;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 40px;
+    transform: translateX(55%);
+    transition: transform 1s ease-in-out;
   }
-}
+  
+  .name.slide-in {
+    transform: translateX(0);
+  }
+  .round-button.slide-in:hover{
+    transform: scale(1.2);
+    background-color: rgb(0, 0, 0);
+    border-color: #fff;
+    color: rgb(248, 248, 248);
+  }
+
+  .copyright-notice {
+    position: absolute;
+    margin-top: 570px;
+    padding: 10px;
+    color: #E2D1F9;
+    font-size: 17px;
+    cursor: not-allowed;
+    /* Add any additional styling as needed */
+  }
+
+  /* styles.css */
+
+/* styles.css */
+

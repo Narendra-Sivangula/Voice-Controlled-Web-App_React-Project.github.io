@@ -1,0 +1,85 @@
+/* Navbar.css */
+
+.custom-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #317773; /* Adjust the background color as needed */
+  padding: 10px;
+  color:#000000; /* Adjust the text color as needed */
+  z-index: 1000; /* Ensure the navbar appears above other elements */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+}
+
+.custom-image {
+  width: 60px; /* Adjust the width as needed */
+  height: auto;
+  margin-right: 5px; /* Adjust the margin as needed */
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.head-links:hover{
+  color: rgb(0, 0, 0);
+}
+
+.nav-item {
+  font-size: 25px;
+    padding-right: 10px;
+    font-weight: bold;
+  margin: 0;
+}
+
+.link-underline {
+  position: relative;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.head-links {
+    font-size: 25px;
+    color: rgb(255, 252, 252);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+.link-underline {
+  position: relative;
+  /*text-decoration: underline;*/
+}
+
+
+.link-underline:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.9s ease-in-out;
+}
+
+.link-underline:hover:after {
+  transform: scaleX(1); /* Underline effect on hover */
+  transform-origin: bottom left;
+}

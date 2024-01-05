@@ -1,0 +1,117 @@
+.home{
+    font-size: 50px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+
+
+
+
+
+body {
+    background-color: black; /* Change this to your preferred background color (e.g., grey) */
+    margin: 0; /* Remove default margin to ensure full width */
+    padding: 0; /* Remove default padding to ensure full width */
+  }
+
+  .pulse {
+    animation: pulse 1s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .about-container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+    padding: 20px;
+    opacity: 0; /* Initially set opacity to 0 for animation */
+    transform: translateY(20px); /* Initial translation for animation */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  
+    /* Adjustments for small screens */
+    @media (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
+
+
+  .photo-container {
+    flex:1;
+    margin-top: 50px;
+    margin-right: 20px;
+  
+    img {
+      margin-top: 100px;
+      height: 100%; /* Set the height to 100% of the container */
+      width: 100%;
+      border-radius: 10%;
+    }
+  }
+  
+  .details-container {
+    flex: 2;
+  
+    h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+  
+    p {
+      font-size: 40px;
+    }
+  }
+  .profile-card {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    background-color: rgb(255, 255, 255); /* Set the background color of the card */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0); /* Add a subtle box shadow for depth */
+    overflow: hidden; /* Ensure the card doesn't overflow its boundaries */
+    position: relative; /* Establish positioning context for child elements */
+  }
+  
+  .profile-image {
+    width: 250px; /* Adjust the size of the profile image */
+    height: 220px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0; /* Position the profile image at the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
+  }
+  
+  .details-container {
+    margin-top: 150px;
+    padding: 20px;
+    text-align: center; /* Center the text content */
+  }
+  
+  /* Add or modify other styles as needed */
+  
+
+  .bio{
+    margin: 25px;
+  }
+
+  .button{
+    border-radius: 10px;
+    cursor:default;
+    color: aqua;
+    box-shadow: black;
+  }
