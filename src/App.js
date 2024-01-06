@@ -50,7 +50,7 @@ const App = () => {
     } else if(command.includes('light mode')){
       SetIsDarkMode(false);
     }
-
+ 
     if (
       command.includes('navigate to') ||
       command.includes('go to')
